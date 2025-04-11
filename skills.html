@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COLLEEN'S ROOM</title>
+    <style>
+
+    /*KEYFRAMES*/
+    
+    @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes slideInLeft {
+    from { opacity: 0; transform: translateX(-50px); }
+    to { opacity: 1; transform: translateX(0); }
+    }
+    @keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes bounceIcon {
+    0%, 100% {
+      transform: scale(1);
+      }
+      50% {
+      transform: scale(1.2);
+      }
+    }
+
+        body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color:#BD99A2;
+        }
+
+        .contain {
+        text-align: center;
+        background-image: url('images/Pink.jpg');
+        background-size: cover;
+        background-position: center;
+        height: 120vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        }
+
+        header {
+      font-family: 'Playfair Display';
+      background-color:#BD99A2;
+      color:black;
+}
+
+@keyframes floatText {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+}
+
+header h1{
+    font-size: 2.5em;
+    color: black;
+    margin-top: 10px;
+    font-family: 'Playfair Display';
+    animation: floatText 3s ease-in-out infinite;
+}
+nav {
+  top:0;
+  left: 0;
+  width: 100%;
+  background-color: #BD99A2;
+  z-index: 100;
+}
+
+nav ul{ 
+    font-family:'Times New Roman', Times, serif;
+    background-color:#E4D6DA;
+    text-align:center;
+    padding:1em
+}
+nav ul li{
+    display: inline;
+    margin:0px 30px;
+    padding: 0 10px ;
+    justify-content: center;
+    gap: 2em;
+    top: 10px;
+}
+nav a{
+    text-decoration: none;
+    color:black;
+    font-weight: bold;
+}
+
+nav ul li a{
+  transition: all 0.5s ease-in-out;
+}
+
+nav ul li a:hover {
+    background-color: #8F778D; /* Slightly darker shade on hover */
+    font-size: 1.2em;
+    color: #FFF2DF;
+    transform: scale(3.5);
+}
+
+    .content {
+    text-align: left;
+    margin-left:10px;
+    }
+    
+    .content h2 {
+    color: #ffffff; 
+    width:calc(10% - 20px);
+    padding: 30px;
+    background-color: #D180AC;
+    border-radius: 15px; 
+    margin-left: 40px;
+    text-align: center;
+    transition: all 0.5s ease-in-out;
+}
+  .content h2:hover{
+    background-color: #8F778D; /* Slightly darker shade on hover */
+    font-size: 1.2em;
+    color: #FFF2DF;
+    transform: scale(1.5);
+}
+
+    .logo {
+    width: 70px;
+    height: 70px;
+    background: white;
+    padding: 8px;
+    border-radius: 10px;
+    position: absolute;
+    left: 10px;
+    z-index: 1;
+    }
+
+    .logo img {
+    width: 70px;
+    height: 70px;
+    }
+    
+    /* NEW */
+    .container {
+    width: 50%;
+    max-width: 600px;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+    animation: fadeIn 1.2s ease-in both
+    }
+      .top-section {
+        background: #E4D6DA;
+        padding: 3px;
+        display: flex;
+        align-items: center;
+        margin-left: 10px;
+        animation: slideInLeft 1s ease-out both;
+        transition: all 0.4s ease-in-out; 
+      }
+  
+      .bottom-section {
+        background-color: #8F788D;
+        color: white;
+        display: flex;
+        align-items: center;
+        padding:0;
+        margin-left: 10px;
+        animation: fadeInUp 1.5s ease-in both;
+        transition: all 0.4s ease-in-out;
+      }
+
+      .top-section h1 {
+        margin: 0 0 0 3px;
+        font-size: 24px;
+        color: #D180AC;
+        font-family: 'Times New Roman', Times, serif;
+        margin-left: 10px;
+        font-weight: bold;
+      }
+      
+      .icon {
+        flex-shrink: 0;
+        margin-left: 5px;
+      }
+  
+      
+      .icon img {
+        width: 70px;
+        height: 70px;
+        background-color: white;
+        padding: 10px;
+        border-radius: 10px;
+        transition: transform 0.3s ease-in-out;
+      }
+      .icon img:hover {
+        animation: bounceIcon 0.6s ease;
+      }
+      
+      .box-text {
+        font-size: 18px;
+        font-family: 'Playfair Display';
+        transition: all 0.4s ease-in-out;
+      }
+      .box-text:hover{
+      background-color: #8F778D; /* Slightly darker shade on hover */
+      font-size: 1.2em;
+      color: #FFF2DF;
+      transform: scale(1);
+}
+
+      .container-resolution{
+      padding-bottom: 20px;
+    }
+
+    footer {
+    text-align: center; 
+    background-color: #BD99A2; /* Footer background color */
+    color: black; /* Footer text color */
+    padding: 10px 0; /* Padding for footer */
+    font-weight: bold;
+}
+    </style>
+</head>
+<body>
+    <div class="contain">
+        <header>
+        <h1>SKILLS</h1>
+        <nav>
+          <ul>
+            <li><a href="home(2).html">Home</a></li>
+            <li><a href="about.html">About me</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="experiences.html">Experiences</a></li>
+            <li><a href="credentials.html">Credentials</a></li>
+            <li><a href="designs.html">Designs</a></li>
+            <li><a href="socialmedia.html">Social Media Links</a></li>
+          </ul>
+      </nav>
+        </header>
+     <div class="content">
+        <h2>Skills</h2>
+     </div>
+
+
+
+     <div class="container-resolution">
+        <div class="container"style="animation-delay: 0s;">
+          
+          <!-- KAYA HINIWALAY KO YUNG TAAS PARA HINDI MAGULO PAG NAG CSS, NAKA SEPERATE YUNG KULAY NG ILALIM AT ITAAS AT HINDI MAGKAKAGULO SA FORMAT O POSITION NG TEXT O IMAGE -->
+          <div class="top-section">
+            <h1>Coding</h1>
+          </div>
+    
+          <!-- KAYA MAY BOTTOM-SECTION NA, PARA MAGKASAMA YUNG LOGO AT TEXT SA IISANG DIV PARA MAGKADIKIT SILA PAG NAG CSS KA -->
+          <div class="bottom-section">
+              
+            <div class="icon">
+              <img src="https://cdn-icons-png.flaticon.com/512/689/689396.png" alt="Icon" />
+            </div>
+            
+            <!-- PARA TO SA PARAGRAPH MO SA IBABA -->
+            <p class="box-text">
+              I’m passionate about coding and constantly improving my technical abilities and I enjoy developing clean, efficient code to solve complex problems.
+            </p>
+  
+          </div>
+  
+       </div>
+      </div>
+  
+      <div class="container-resolution">
+        <div class="container"style="animation-delay: 0.3s;">
+          
+          <!-- KAYA HINIWALAY KO YUNG TAAS PARA HINDI MAGULO PAG NAG CSS, NAKA SEPERATE YUNG KULAY NG ILALIM AT ITAAS AT HINDI MAGKAKAGULO SA FORMAT O POSITION NG TEXT O IMAGE -->
+          <div class="top-section">
+            <h1>Cooking</h1>
+          </div>
+          
+          <!-- KAYA MAY BOTTOM-SECTION NA, PARA MAGKASAMA YUNG LOGO AT TEXT SA IISANG DIV PARA MAGKADIKIT SILA PAG NAG CSS KA -->
+          <div class="bottom-section">
+              
+            <div class="icon">
+              <img src="https://cdn-icons-png.flaticon.com/512/3448/3448102.png" alt="Icon" />
+            </div>
+            
+            <!-- PARA TO SA PARAGRAPH MO SA IBABA -->
+            <p class="box-text">
+              I’m passionate about coding and constantly improving my technical abilities and I enjoy developing clean, efficient code to solve complex problems.
+            </p>
+  
+          </div>
+  
+      </div>
+      </div>
+  
+  
+      <div class="container-resolution">
+        <div class="container"style="animation-delay: 0.6s;">
+          
+          <!-- KAYA HINIWALAY KO YUNG TAAS PARA HINDI MAGULO PAG NAG CSS, NAKA SEPERATE YUNG KULAY NG ILALIM AT ITAAS AT HINDI MAGKAKAGULO SA FORMAT O POSITION NG TEXT O IMAGE -->
+          <div class="top-section">
+            <h1>Playing Instruments</h1>
+          </div>
+          
+          <!-- KAYA MAY BOTTOM-SECTION NA, PARA MAGKASAMA YUNG LOGO AT TEXT SA IISANG DIV PARA MAGKADIKIT SILA PAG NAG CSS KA -->
+          <div class="bottom-section">
+              
+            <div class="icon">
+              <img src="https://cdn-icons-png.flaticon.com/512/1082/1082751.png" alt="Icon" />
+            </div>
+            
+            <!-- PARA TO SA PARAGRAPH MO SA IBABA -->
+            <p class="box-text">
+              I’m passionate about coding and constantly improving my technical abilities and I enjoy developing clean, efficient code to solve complex problems.
+            </p>
+  
+          </div>
+  
+      </div>
+      </div>
+
+
+
+
+    </div>
+
+    <div>
+        <footer>
+            <p>&copy; 2025 COLLEEN'S ROOM | All Rights Reserved</p>
+        </footer>
+      </div>
+</body>
+</html>

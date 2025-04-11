@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Me</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color:#BD99A2;
+}
+
+.container {
+    text-align: center;
+    background-image: url('images/Pink.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 120vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+header {
+    font-family: 'Playfair Display';
+    background-color:#BD99A2;
+    color:black;
+}
+
+@keyframes floatText {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+}
+
+header h1{
+    font-size: 2.5em;
+    color: black;
+    margin-top: 10px;
+    font-family: 'Playfair Display';
+    animation: floatText 3s ease-in-out infinite;
+}
+
+nav {
+  top:0;
+  left: 0;
+  width: 100%;
+  background-color: #BD99A2;
+  z-index: 100;
+}
+
+nav ul{ 
+    font-family:'Times New Roman', Times, serif;
+    background-color:#E4D6DA;
+    text-align:center;
+    padding:1em
+}
+nav ul li{
+    display: inline;
+    margin:0px 30px;
+    padding: 0 10px ;
+    justify-content: center;
+    gap: 2em;
+    top: 10px;
+}
+nav a{
+    text-decoration: none;
+    color:black;
+    font-weight: bold;
+}
+
+nav ul li a{
+  transition: all 0.5s ease-in-out;
+}
+
+nav ul li a:hover {
+    background-color: #8F778D; /* Slightly darker shade on hover */
+    font-size: 1.2em;
+    color: #FFF2DF;
+    transform: scale(3.5);
+}
+
+.content {
+  text-align: left;
+  margin-left:10px;
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.text-box {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 20px;
+  color:#E4D6DA;
+  width: calc(23% - 20px);
+  padding: 10px;
+  background-color: #D180AC; 
+  border-radius: 15px;
+  margin-left: 50px;
+  display: flex;
+  gap: 10px(adjustable);
+  animation: slideInLeft 1.2s ease-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.text-box:hover{
+  background-color: #8F778D; /* Slightly darker shade on hover */
+  color: #FFF2DF;
+  transform: scale(1.2);
+}
+
+.content h2 {
+  color: #ffffff; 
+  width:calc(10% - 20px);
+  padding: 30px;
+  background-color: #D180AC;
+  border-radius: 15px; 
+  margin-left: 40px;
+  text-align: center;
+  align-items: flex-start;
+  margin-top: 1px;
+  transition: all 0.5s ease-in-out;
+}
+.content h2:hover{
+  background-color: #8F778D; /* Slightly darker shade on hover */
+  font-size: 1.2em;
+  color: #FFF2DF;
+  transform: scale(1.5);
+}
+
+.image-box {
+  width: calc(10% - 20px);
+  display: flexbox;
+}
+
+@keyframes zoomIn {
+  from {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.circular-image {
+  position:absolute;
+  top:210px;
+  right: 20px;
+  width: 450px;
+  height: 450px;
+  border-radius: 50%;
+  object-fit: cover;
+  animation: zoomIn 1.5s ease-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.circular-image:hover{
+  background-color: #8F778D; /* Slightly darker shade on hover */
+  color: #FFF2DF;
+  transform: scale(1.2);
+}
+
+footer {
+    text-align: center; 
+    background-color: #BD99A2; /* Footer background color */
+    color: black; /* Footer text color */
+    padding: 10px 0; /* Padding for footer */
+    font-weight: bold;
+}
+
+</style>
+<body>
+<div class="container">
+        <header>
+        <h1>ABOUT ME</h1>
+        <nav>
+          <ul>
+              <li><a href="home(2).html">Home</a></li>
+              <li><a href="about.html">About me</a></li>
+              <li><a href="skills.html">Skills</a></li>
+              <li><a href="experiences.html">Experiences</a></li>
+              <li><a href="credentials.html">Credentials</a></li>
+              <li><a href="designs.html">Designs</a></li>
+              <li><a href="socialmedia.html">Social Media Links</a></li>
+          </ul>
+      </nav>
+        </header>
+    <!--Navigation--> 
+    
+ <!-- Main Content -->
+     <div class="content">
+      <h2>About me</h2>
+      <!-- Text Box -->
+      <div class="text-box">
+        <p>Hello, I’m Colleen, a person who flourishes in creativity and the discovery of fresh ideas. I have a strong passion and I enjoy connecting with people who have similar interests. I strive to infuse positivity and a sense of wonder into all my activities. I hold in high regard and believe in seizing every chance to learn and develop. I embrace new experiences with an open mind and cherish sharing stories and laughter along the journey!</p>
+      </div>
+        <img src="images/487843646_532172826304442_4856292599234524964_n.jpg" alt="Right-aligned image"class="circular-image">
+    </div>
+    <div>
+    <footer>
+        <p>&copy; 2025 COLLEEN'S ROOM | All Rights Reserved</p>
+    </footer>
+  </div>
+</div>
+</body>
+</html>

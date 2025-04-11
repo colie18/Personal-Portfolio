@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COLLEEN'S ROOM</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+   
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 4; }
+}
+ 
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color:#E4D6DA;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.container {
+    text-align: center;
+    background-image: url('images/Pink.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 120vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+header {
+font-family: 'Playfair Display';
+background-color:#BD99A2;
+color:black;
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+header h1 {
+    font-size: 2.5em;
+    color: black;
+    margin-top: 10px;
+    font-family: 'Playfair Display';
+    animation: slideIn 3s ease-out;
+}
+header p{
+font-size: 15px;
+text-align: left;
+font-weight: bold;
+margin-top: 5px;
+}
+
+h3{
+font-family: 'Times New Roman', Times, serif;
+font-size: 25px;
+text-align: center;
+color:white;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: center;
+    gap: 150px;
+    
+}
+
+nav ul li {
+    margin: 5px;
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-8px);
+    }
+}
+
+nav ul li a {
+    display: block;
+    width: 200px;
+    height: 100px;
+    background-color: #D180AC; /* Blue color for buttons */
+    color: white;
+    text-decoration: none;
+    line-height: 100px; /* Center text vertically */
+    border-radius: 10px; /* Rounded corners */
+    font-family:'Playfair Display';
+    font-weight: bold;
+    font-size: 1.2em; /* Font size for button text */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Button shadow */
+    transition: background-color 0.3s ease-in-out; /* Hover effect */
+    animation: float 3s ease-in-out infinite;
+}
+
+@keyframes bounce {
+    0% { transform: scale(1);}
+    50% { transform: scale(1.1); }
+    70% { transform: scale(0.95); }
+    100% { transform: scale(2.2); }
+}
+
+nav ul li a:hover {
+    background-color: #8F778D;
+    color: #FFF2DF;
+    animation: bounce 1.5s ease-in-out;
+}
+
+.grid-container {
+  display: grid;
+  gap: 5px; /* Adjust this value to control space BETWEEN boxes */
+  justify-items: center;
+  padding:2em;
+}
+
+footer {
+    text-align: center; 
+    background-color: #BD99A2; /* Footer background color */
+    color: black; /* Footer text color */
+    padding: 10px 0; /* Padding for footer */
+    font-weight: bold;
+}
+</style>
+<body>
+    <div class="container">
+        <header>
+            <h1>COLLEEN'S ROOM</h1>
+            <p>About page</p>
+            <p>This page is all about the colleen's portfolio</p>
+        </header>
+            <h3>Home</h3>
+    <div class="grid-container">
+        <nav>
+        <ul>
+        <li><a href="about.html">About me</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="experiences.html">Experiences</a></li>
+        <li><a href="credentials.html">Credentials</a></li>
+        <li><a href="designs.html">Designs</a></li>
+        <li><a href="socialmedia.html">Social Media Links</a></li>
+        </ul>
+        </nav>
+    </div>
+        <footer>
+            <p>&copy; 2025 COLLEEN'S ROOM | All Rights Reserved</p>
+        </footer>
+    </div>
+</body>
+</html>
