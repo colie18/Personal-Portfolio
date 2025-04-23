@@ -221,7 +221,93 @@ footer {
     color: black; 
     padding: 10px 0; 
     font-weight: bold;
+    font-weight: bold;
+    font-size: 1em;
+    box-sizing: border-box;
 }
+
+
+/* MEDIA  QUERIES TAWAG SA MGA E2 */
+
+/* PARA TO SA LARGE NA TABLET OR LAPTOP NA RESOLUTION KOWLEN (max-width: 1024px) */
+@media (max-width: 1024px) {
+    .box-container {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .box {
+        width: 45%;
+        margin: 10px;
+    }
+
+
+}
+
+/* PARA TO SA TABLET VIEW NA RESOLUTION KOWLEN (max-width: 768px) */
+@media (max-width: 768px) {
+    .box-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .box {
+        width: 80%;
+        margin: 10px 0;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    nav ul li {
+        margin: 10px 10px;
+    }
+
+}
+
+/* PARA TO SA MOBILE VIEW NA RESOLUTION KOWLEN (max-width: 425px) */
+@media (max-width: 425px) {
+
+.container {
+  width: 100%;
+}
+
+    .box {
+        width: 100%;
+        height: auto;
+    }
+
+    .img figure img {
+        height: auto;
+    }
+
+    nav ul {
+        flex-direction: column;
+        padding: 0.5em;
+    }
+
+    nav ul li {
+        margin: 5px 0;
+    }
+
+    
+    header h1 {
+        font-size: 1.5em;
+    }
+
+    footer {
+        font-size: 0.75em;
+        padding: 8px;
+        word-wrap: break-word;
+        text-align: center;
+        line-height: 1.4;
+    }
+}
+
 
 </style>
 
