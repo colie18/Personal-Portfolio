@@ -4,7 +4,6 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>About Me</title>
-  <link rel="stylesheet" href="styles.css">
 </head>
 <style>
 body {
@@ -84,7 +83,7 @@ nav ul li a:hover {
     background-color: #8F778D; /* Slightly darker shade on hover */
     font-size: 1.2em;
     color: #FFF2DF;
-    transform: scale(3.5);
+    transform: scale(2.5);
 }
 
 .content {
@@ -184,7 +183,110 @@ footer {
     padding: 10px 0; /* Padding for footer */
     font-weight: bold;
 }
+ /* MEDIA  QUERIES TAWAG SA MGA E2 */
 
+    /* PARA TO SA LARGE NA TABLET OR LAPTOP NA RESOLUTION KOWLEN (max-width: 1024px) */
+    @media (max-width: 1024px) {
+      nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    nav ul li {
+        margin: 10px 10px;
+    }
+
+      .content h2 {
+        width: calc(30% - 20px);
+        margin-left: 20px;
+        padding: 20px;
+        font-size: 1.8rem;
+      }
+
+      .text-box {
+        width: calc(60% - 20px);
+        margin-left: 20px;
+        font-size: 18px;
+      }
+
+      .circular-image {
+        width: 300px;
+        height: 300px;
+        top: 150px;
+        right: 10px;
+      }
+    }
+
+
+
+    /* PARA TO SA TABLET VIEW NA RESOLUTION KOWLEN (max-width: 768px) */
+    @media (max-width: 768px) {
+
+      
+      nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    nav ul li {
+        margin: 10px 10px;
+    }
+
+      .content h2 {
+        width: 60%;
+        margin: 160px auto;
+        font-size: 1.5rem;
+        text-align: center;
+      }
+
+      .text-box {
+        width: 80%;
+        margin: -140px auto;
+        font-size: 16px;
+        padding: 15px;
+      }
+
+      .circular-image {
+        width: 250px;
+        height: 250px;
+        top: 230px;
+        right: 0;
+        left: 0;
+        margin: 0 auto;
+      }
+    }
+
+    /* PARA TO SA MOBILE VIEW NA RESOLUTION KOWLEN (max-width: 425px) */
+    @media (max-width: 425px) {
+      nav ul {
+        flex-direction: column;
+        padding: 0.5;
+      }
+
+      nav ul li {
+        margin: 5px 0;
+      }
+
+
+      .content h2 {
+        font-size: 1.3rem;
+        padding: 20px;
+      }
+
+      .text-box {
+        width: 90%;
+        margin: -120px auto;
+        font-size: 14px;
+        padding: 10px;
+      }
+
+      .circular-image {
+        width: 150px;
+        height: 150px;
+        margin: 0 auto;
+        top: 250px;
+      }
+    }
 </style>
 <body>
 <div class="container">
@@ -193,7 +295,7 @@ footer {
         <nav>
           <ul>
               <li><a href="home(2).html">Home</a></li>
-              <li><a href="index.html">About me</a></li>
+              <li><a href="about.html">About me</a></li>
               <li><a href="skills.html">Skills</a></li>
               <li><a href="experiences.html">Experiences</a></li>
               <li><a href="credentials.html">Credentials</a></li>
