@@ -130,7 +130,7 @@ nav ul li a:hover {
   background-color: #8F778D; /* Slightly darker shade on hover */
   font-size: 1.2em;
   color: #FFF2DF;
-  transform: scale(1);
+  transform: scale(1.5);
 }
 
 
@@ -152,11 +152,6 @@ nav ul li a:hover {
     
     /* NEW */
     .container {
-        width: 30%;
-        max-width: 600px;
-        border-radius: 20px;
-        overflow: hidden;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
         width: 30%;
         max-width: 600px;
         border-radius: 20px;
@@ -194,7 +189,7 @@ nav ul li a:hover {
       }
   
       .top-section h1 {
-        margin: 0 0 0 3px;
+        margin: 0 0 0 1px;
         font-size: 24px;
         color: #D180AC;
         font-family: 'Times New Roman', Times, serif;
@@ -223,7 +218,7 @@ nav ul li a:hover {
       }
 
       .container-resolution{
-      padding-bottom: 15px;
+      padding-bottom: 20px;
     }
 
     footer {
@@ -233,6 +228,82 @@ nav ul li a:hover {
     padding: 10px 0; /* Padding for footer */
     font-weight: bold;
 }
+ /* MEDIA  QUERIES TAWAG SA MGA E2 */
+
+    /* PARA TO SA LARGE NA TABLET OR LAPTOP NA RESOLUTION KOWLEN (max-width: 1024px) */
+    @media (max-width: 1024px) {
+      .container {
+        width: 45%;
+      }
+    }
+
+    /* PARA TO SA TABLET VIEW NA RESOLUTION KOWLEN (max-width: 768px) */
+    @media (max-width: 768px) {
+      .container {
+        width: 80%;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    nav ul li {
+        margin: 10px 10px;
+    }
+
+      .bottom-section {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .icon img {
+        width: 50px;
+        height: 50px;
+      }
+
+      .box-text a {
+        font-size: 14px;
+      }
+    }
+
+    /* PARA TO SA MOBILE VIEW NA RESOLUTION KOWLEN (max-width: 425px) */    
+    @media (max-width: 425px) {
+
+
+      .content h2 {
+        font-size: 18px;
+        padding: 15px;
+      }
+
+      .top-section h1 {
+        font-size: 20px;
+      }
+
+      .icon img {
+        width: 40px;
+        height: 40px;
+      }
+
+      .box-text a {
+        font-size: 13px;
+      }
+
+      .container {
+        width: 90%;
+      }
+
+      nav ul {
+        flex-direction: column;
+        padding: 0.5em;
+    }
+
+    nav ul li {
+        margin: 5px 0;
+    }
+  }
+
+
     </style>
 </head>
 <body>
